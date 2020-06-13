@@ -1,5 +1,5 @@
 body{
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     margin: 0px;
     padding: 0px;
 }
@@ -19,4 +19,47 @@ nav h1{
     flex-direction: row;
     color: rgb(85, 163, 231)
     
+}
+.sidebarre{
+    float: left;
+    height: auto;
+    width: 17%;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: none;
+}
+.flex div{
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px;
+}
+
+.flex div:hover{
+    background-color: rgb(85, 163, 231);
+    color: white;
+}
+.profil{
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+}
+.mail{
+    margin-left: 4px;
+    margin-bottom: 35px;
+    color: rgb(85, 163, 231);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.icon{
+    width: 30px;
+    height: 25px;
+    margin-right: 20px;
 }
