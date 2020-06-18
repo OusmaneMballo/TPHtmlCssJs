@@ -38,7 +38,7 @@
     <article class="content">
         <fieldset>
             <legend>Creation Client</legend>
-            <form action="" method="post" class="form">
+            <form onsubmit="return validation()" method="post" class="form">
                 <div>
                     <select name="" id="typeclient" class="slct" onclick="typeClient()">
                         <option value="0">--Choix du Type de Client--</option>
@@ -52,21 +52,21 @@
                             <legend>Client Moral</legend>
                             <div class="row">
                                 <label for="nomCM">Nom</label>
-                                <input type="text" id="nomCM" name="nomCM" required>
+                                <input type="text" id="nomCM" name="nomCM">
                                 <label for="adresseCM">Adresse</label>
-                                <input type="text" id="adresseCM" name="adresseCM" required>
+                                <input type="text" id="adresseCM" name="adresseCM">
                             </div>
                             <div class="row">
                                 <label for="raisonSocialCM">Raison Social</label>
-                                <input type="text" id="raisonSocialCM" name="raisonSocialCM" required>
+                                <input type="text" id="raisonSocialCM" name="raisonSocialCM">
                                 <label for="emailCM">Email</label>
-                                <input type="email" id="emailCM" name="emailCM" required>
+                                <input type="email" id="emailCM" name="emailCM">
                             </div>
                             <div class="row">
                                 <label for="loginCM">Login</label>
-                                <input type="text" id="loginCM" name="loginCM" required>
+                                <input type="text" id="loginCM" name="loginCM">
                                 <label for="passwdCM">PassWord</label>
-                                <input type="password" id="passwdCM" name="passwdCM" required>
+                                <input type="password" id="passwdCM" name="passwdCM">
                             </div>
                         </fieldset>
                     </div>
@@ -75,33 +75,33 @@
                             <legend>Client Physique</legend>
                             <div class="row">
                                 <label for="nomcp">Nom</label>
-                                <input type="text" id="nomcp" name="nomcp" required>
+                                <input type="text" id="nomcp" name="nomcp">
                                 <label for="prenomcp">Prenom</label>
-                                <input type="text" id="prenomcp" name="prenomcp" required>
+                                <input type="text" id="prenomcp" name="prenomcp">
                             </div>
                             <div class="row">
                                 <label for="telephonecp">Telephone</label>
-                                <input type="text" id="telephonecp" name="telephonecp" required>
+                                <input type="text" id="telephonecp" name="telephonecp">
                                 <label for="salairecp">Salaire</label>
-                                <input type="text" id="prenomcp" name="salairecp" required>
+                                <input type="text" id="salairecp" name="salairecp">
                             </div>
                             <div class="row">
                                 <label for="professioncp">Profession</label>
-                                <input type="text" id="professioncp" name="professioncp" required>
+                                <input type="text" id="professioncp" name="professioncp">
                                 <label for="emailcp">Email</label>
-                                <input type="email" id="emailcp" name="emailcp" required>
+                                <input type="email" id="emailcp" name="emailcp">
                             </div>
                             <div class="row">
                                 <label for="logincp">Login</label>
-                                <input type="text" id="logincp" name="logincp" required>
+                                <input type="text" id="logincp" name="logincp">
                                 <label for="passwdcp">PassWord</label>
-                                <input type="password" id="passwdcp" name="passwdcp" required>
+                                <input type="password" id="passwdcp" name="passwdcp">
                             </div>
                             <div class="row">
                                 <label for="cnicp">CNI</label>
-                                <input type="text" id="cnicp" name="cnicp" required>
+                                <input type="text" id="cnicp" name="cnicp">
                                 <label for="adressecp">Adresse</label>
-                                <input type="text" id="adressecp" name="adressecp" required>
+                                <input type="text" id="adressecp" name="adressecp">
                             </div>
                             <div class="row">
                                 <select name="statutcp" id="statutcp" class="slct2">
