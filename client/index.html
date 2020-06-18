@@ -40,7 +40,7 @@
             <legend>Creation Client</legend>
             <form action="" method="post" class="form">
                 <div>
-                    <select name="" id="" class="slct">
+                    <select name="" id="typeclient" class="slct" onclick="typeClient()">
                         <option value="0">--Choix du Type de Client--</option>
                         <option value="1">1- Client Physique</option>
                         <option value="2">2- Client Moral</option>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="formulaire">
                     <div>
-                        <fieldset disabled>
+                        <fieldset disabled id="cm">
                             <legend>Client Moral</legend>
                             <div class="row">
                                 <label for="nomCM">Nom</label>
@@ -71,7 +71,7 @@
                         </fieldset>
                     </div>
                     <div>
-                        <fieldset disabled>
+                        <fieldset disabled id="cp">
                             <legend>Client Physique</legend>
                             <div class="row">
                                 <label for="nomcp">Nom</label>
@@ -109,10 +109,11 @@
                                     <option value="1">Salarier</option>
                                     <option value="2">Non Salarier</option>
                                 </select>
-                                <select name="statutcp" id="statutcp" class="slct2">
+                                <select name="statutcp" id="employeur" class="slct2" onclick="employeurForm()">
                                     <option value="0">--Employer--</option>
                                     <option value="1">Empleur1</option>
                                     <option value="2">Empleur1</option>
+                                    <option value="3">Ajouter son employeur</option>
                                 </select>
                             </div>
                         </fieldset>
