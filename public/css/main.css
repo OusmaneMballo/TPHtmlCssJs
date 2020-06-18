@@ -23,37 +23,6 @@ nav h1{
     
 }
 
-fieldset{
-    border: solid 1px rgb(85, 163, 231);
-}
-fieldset legend{
-    color: rgb(85, 163, 231);
-}
-
-input{
-    width: 160px;
-    height: 25px;
-    margin-top: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    color: rgb(58, 80, 102);
-    border: solid 1px rgb(85, 163, 231);
-    border-radius: 20px;
-}
-input:hover{
-    background-color: rgb(210, 216, 223);
-}
-input:focus{
-    border-radius: 5px;
-    background-color: rgba(245, 245, 245, 0.762);
-}
-
-label{
-    font-size: 13px;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(58, 80, 102);
-}
-
 select{
     border: solid 1px rgb(85, 163, 231);
     border-radius: 5px;
@@ -95,17 +64,6 @@ button{
     background-color: rgba(141, 24, 24, 0.838);   
 }
 
-.slct{
-    width: 50%;
-    margin-left: 210px;
-    font-size: 20px;
-}
-
-.slct2{
-    width: 47%;
-    margin-top: 10px;
-}
-
 .sidebarre{
     float: left;
     height: auto;
@@ -131,7 +89,15 @@ button{
 
 .flex div:hover{
     background-color: rgb(85, 163, 231);
-    color: white;
+    color: whitesmoke;
+}
+.flex div a{
+    text-decoration: none;
+    font-style: none;
+    color: black;
+}
+.flex div a:hover{
+    color: whitesmoke;
 }
 .profil{
     width: 30%;
@@ -156,13 +122,4 @@ button{
     float:right;
     width: 83%;
 
-}
-.formulaire{
-    display: flex;
-    flex-direction: row;
-}
-.formulaire fieldset{
-    width: 95%;
-    height: auto;
-    margin-right:60px;
 }

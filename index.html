@@ -6,7 +6,7 @@
     <meta name="description" content="Gestion des activites bancaires">
     <meta name="author" content="mballoSoft">
     <title>Add | Client</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./public/css/main.css">
 </head>
 <body>
     <header>
@@ -22,10 +22,10 @@
                 Dashboard
             </div>
             <div class="contener">
-                Compte
+                <a href="./compte/index.html">Compte</a>
             </div>
             <div class="contener">
-                Client
+                <a href="./client/index.html">Client</a>
             </div>
             <div class="contener">
                 Logout
@@ -35,95 +35,7 @@
     <!--Fin Menu-->
 <!--Contenu du body-->
     <article class="content">
-        <fieldset>
-            <legend>Creation Client</legend>
-            <form action="" method="post" class="form">
-                <div>
-                    <select name="" id="" class="slct">
-                        <option value="0">--Choix du Type de Client</option>
-                        <option value="1">1- Client Physique</option>
-                        <option value="2">2- Client Moral</option>
-                    </select>
-                </div>
-                <div class="formulaire">
-                    <div>
-                        <fieldset disabled>
-                            <legend>Client Moral</legend>
-                            <div class="row">
-                                <label for="nomCM">Nom</label>
-                                <input type="text" id="nomCM" name="nomCM" required>
-                                <label for="adresseCM">Adresse</label>
-                                <input type="text" id="adresseCM" name="adresseCM" required>
-                            </div>
-                            <div class="row">
-                                <label for="raisonSocialCM">Raison Social</label>
-                                <input type="text" id="raisonSocialCM" name="raisonSocialCM" required>
-                                <label for="emailCM">Email</label>
-                                <input type="email" id="emailCM" name="emailCM" required>
-                            </div>
-                            <div class="row">
-                                <label for="loginCM">Login</label>
-                                <input type="text" id="loginCM" name="loginCM" required>
-                                <label for="passwdCM">PassWord</label>
-                                <input type="password" id="passwdCM" name="passwdCM" required>
-                            </div>
-                        </fieldset>
-                    </div>
-                    <div>
-                        <fieldset disabled>
-                            <legend>Client Physique</legend>
-                            <div class="row">
-                                <label for="nomcp">Nom</label>
-                                <input type="text" id="nomcp" name="nomcp" required>
-                                <label for="prenomcp">Prenom</label>
-                                <input type="text" id="prenomcp" name="prenomcp" required>
-                            </div>
-                            <div class="row">
-                                <label for="telephonecp">Telephone</label>
-                                <input type="text" id="telephonecp" name="telephonecp" required>
-                                <label for="salairecp">Salaire</label>
-                                <input type="text" id="prenomcp" name="salairecp" required>
-                            </div>
-                            <div class="row">
-                                <label for="professioncp">Profession</label>
-                                <input type="text" id="professioncp" name="professioncp" required>
-                                <label for="emailcp">Email</label>
-                                <input type="email" id="emailcp" name="emailcp" required>
-                            </div>
-                            <div class="row">
-                                <label for="logincp">Login</label>
-                                <input type="text" id="logincp" name="logincp" required>
-                                <label for="passwdcp">PassWord</label>
-                                <input type="password" id="passwdcp" name="passwdcp" required>
-                            </div>
-                            <div class="row">
-                                <label for="cnicp">CNI</label>
-                                <input type="text" id="cnicp" name="cnicp" required>
-                                <label for="adressecp">Adresse</label>
-                                <input type="text" id="adressecp" name="adressecp" required>
-                            </div>
-                            <div class="row">
-                                <select name="statutcp" id="statutcp" class="slct2">
-                                    <option value="0">--Statut Client--</option>
-                                    <option value="1">Salarier</option>
-                                    <option value="2">Non Salarier</option>
-                                </select>
-                                <select name="statutcp" id="statutcp" class="slct2">
-                                    <option value="0">--Employer--</option>
-                                    <option value="1">Empleur1</option>
-                                    <option value="2">Empleur1</option>
-                                </select>
-                            </div>
-                        </fieldset>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <button type="submit" class="valider">Ajouter</button>
-                    <button type="reset" class="annuler">Annuler</button>
-                </div>
-            </form>
-        </fieldset>
+        
     </article>
     <script src="main.js"></script>
 </body>
