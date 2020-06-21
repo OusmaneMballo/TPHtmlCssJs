@@ -1,6 +1,22 @@
-import { addclient} from 'main';
-
-addclient();
+class Client{
+    constructor(id, nom, prenom, tel, salaire, profession, email, login, passwd, nci, address, employeur){
+        this.id = id;
+        this.nom = nom;
+        this.prenom = prenom;
+        this.tel = tel;
+        this.salaire = salaire;
+        this.profession = profession;
+        this.email = email;
+        this.login = login;
+        this.passwd = passwd;
+        this.nci = nci;
+        this.address = address;
+        this.employeur = employeur;
+    };
+    addEmployeur = function (employeur) {
+    this.employeur = employeur;
+};
+}
 
 function employeurForm(){
     
