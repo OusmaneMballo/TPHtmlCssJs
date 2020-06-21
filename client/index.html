@@ -38,7 +38,7 @@
     <article class="content">
         <fieldset>
             <legend>Creation Client</legend>
-            <form onsubmit="return post()" method="post" class="form">
+            <form class="form">
                 <div>
                     <select name="" id="typeclient" class="slct" onclick="typeClient()">
                         <option value="0">--Choix du Type de Client--</option>
@@ -120,11 +120,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <button type="submit" class="valider">Ajouter</button>
+                    <button type="button" class="valider" onclick="post()">Ajouter</button>
                     <button type="reset" class="annuler">Annuler</button>
                 </div>
             </form>
         </fieldset>
+        <div id="affiche"></div>
     </article>
     <script src="../public/js/client.js"></script>
     <script src="../public/js/main.js"></script>

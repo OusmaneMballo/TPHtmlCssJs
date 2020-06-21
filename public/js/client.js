@@ -1,6 +1,8 @@
-class Client{
-    constructor(){};
-    initialize = function (id, nom, prenom, tel, salaire, profession, email, login, passwd, nci, address){
+
+//Creation de l'objet client
+class Client {
+    constructor() { };
+    initialize = function (id, nom, prenom, tel, salaire, profession, email, login, passwd, nci, address) {
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -14,9 +16,42 @@ class Client{
         this.address = address;
     }
     addEmployeur = function (employeur) {
-    this.employeur = employeur;
+        this.employeur = employeur;
     };
+} 
+//--------Declaration de variables globales------//
+
+var cl = new Client();
+var clients = [];
+var i = 0;
+
+//------Fin de declaration des variable globales------//
+
+///
+//Lea methode addClient permet d'ajout un client dans le tableau de client
+///
+function addClient() {
+    //console.log(document.getElementById('nomcp').value);
+    cl.nom = document.getElementById('nomcp').value;
+    cl.prenom = document.getElementById('prenomcp').value;
+    cl.nci = document.getElementById('cnicp').value;
+    cl.passwd = document.getElementById('passwdcp').value;
+    cl.profession = document.getElementById('professioncp').value;
+    cl.salaire = document.getElementById('salairecp').value;
+    cl.tel = document.getElementById('telephonecp').value;
+    cl.email = document.getElementById('emailcp').value;
+    cl.login = document.getElementById('logincp').value;
+    cl.id = i + 1;
+    clients[i++] = cl;
 }
+
+function optionClient(){
+    for (let index = 0; index < clients.length; index++) {
+        
+        
+    }
+}
+
 function employeurForm(){
     
     let client = document.getElementById("employeur");
@@ -105,10 +140,11 @@ function validation(){
 
 function post(){
     if (validation()){
-        alert('Okey tout les champs sont remplis')
-        return true;
+        
+        addClient();
     }
     else{
         alert('Merci de renseigner les champs actives');
+        return false;
     }
 }
