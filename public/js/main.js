@@ -14,6 +14,9 @@ function clients(id,nom,prenom,tel,salaire,profession,email,login,passwd,nci,add
     this.nci=nci;
     this.address=address;
     this.employeur=employeur;
+    this.addEmployeur=function(employeur){
+        this.employeur = employeur;
+    }
 }
 
 ///
