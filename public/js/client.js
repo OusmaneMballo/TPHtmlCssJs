@@ -1,5 +1,6 @@
 class Client{
-    constructor(id, nom, prenom, tel, salaire, profession, email, login, passwd, nci, address, employeur){
+    constructor(){};
+    initialize = function (id, nom, prenom, tel, salaire, profession, email, login, passwd, nci, address){
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
@@ -11,13 +12,11 @@ class Client{
         this.passwd = passwd;
         this.nci = nci;
         this.address = address;
-        this.employeur = employeur;
-    };
+    }
     addEmployeur = function (employeur) {
     this.employeur = employeur;
-};
+    };
 }
-
 function employeurForm(){
     
     let client = document.getElementById("employeur");
@@ -29,22 +28,6 @@ function employeurForm(){
         document.getElementById("cm").disabled = true;
     }
 }
-function typeClient() {
-    let client = document.getElementById("typeclient");
-    let choix = client.selectedIndex;
-    let type = client.options[choix].text;
-    if (type === "1- Client Physique") {
-        document.getElementById("cp").disabled = false;
-        document.getElementById("cm").disabled = true;
-    }
-    else {
-        if (type === "2- Client Moral") {
-            document.getElementById("cm").disabled = false;
-            document.getElementById("cp").disabled = true;
-        }
-    }
-}
-
 //Fonction de verification des champs input d'un client moral
 function verificationMoral() {
 
@@ -62,6 +45,22 @@ function verificationMoral() {
     }
 
     return true;
+}
+
+function typeClient() {
+    let client = document.getElementById("typeclient");
+    let choix = client.selectedIndex;
+    let type = client.options[choix].text;
+    if (type === "1- Client Physique") {
+        document.getElementById("cp").disabled = false;
+        document.getElementById("cm").disabled = true;
+    }
+    else {
+        if (type === "2- Client Moral") {
+            document.getElementById("cm").disabled = false;
+            document.getElementById("cp").disabled = true;
+        }
+    }
 }
 
 //Fonction de verification des champs input d'un client physique
@@ -106,12 +105,10 @@ function validation(){
 
 function post(){
     if (validation()){
-        
-        
         alert('Okey tout les champs sont remplis')
         return true;
     }
-
-    alert('Merci de renseigner les champs actives');
-    return false;
+    else{
+        alert('Merci de renseigner les champs actives');
+    }
 }

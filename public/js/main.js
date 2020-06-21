@@ -1,9 +1,6 @@
-export function addclient(){
-    console.log('fonction exporte')
+class Main{
+    cl=new Client();
+    cpt=new Compte();
+    Client=new Array();
+    Compte=new Array();
 }
-
-function addcompte(cpt, i) {
-    comptes[i++] = cpt
-}
-
-export default main;
