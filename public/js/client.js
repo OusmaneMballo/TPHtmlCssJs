@@ -1,3 +1,7 @@
+import { addclient} from 'main';
+
+addclient();
+
 function employeurForm(){
     
     let client = document.getElementById("employeur");
@@ -9,7 +13,6 @@ function employeurForm(){
         document.getElementById("cm").disabled = true;
     }
 }
-
 function typeClient() {
     let client = document.getElementById("typeclient");
     let choix = client.selectedIndex;
@@ -78,7 +81,19 @@ function verificationPhysique() {
 function validation(){
     
     if(verificationMoral()==true && verificationPhysique()==true){
-        return alert('Okey tout les champs sont remplis')
+        
+        return true;
+    }
+
+    return false;
+}
+
+function post(){
+    if (validation()){
+        
+        
+        alert('Okey tout les champs sont remplis')
+        return true;
     }
 
     alert('Merci de renseigner les champs actives');
