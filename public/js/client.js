@@ -45,10 +45,19 @@ function addClient() {
     clients[i++] = cl;
 }
 
-function optionClient(){
+function optionClient() {
+    let slct=document.getElementById('client');
     for (let index = 0; index < clients.length; index++) {
-        
-        
+        //let option=document.createElement('option');
+        let newOption = new Option(
+            clients[index].prenom + " " + clients[index].nom + "-" + clients[index].nci,
+            clients[index].id
+            );
+        slct.options.add(newOption);
+        console.log(clients[index].prenom + " " + clients[index].nom + "-" + clients[index].nci);
+        //option.attributes('value') = clients[index].id;
+        //option.textContent = clients[index].id + "-" + clients[index].prenom + " " + clients[index].nom + "-" + clients[index].nci;
+        //slct.append(option);
     }
 }
 
@@ -58,9 +67,9 @@ function employeurForm(){
     let choix = client.selectedIndex;
     let type = client.options[choix].text;
     if (type === "Ajouter son employeur") {
-        document.getElementById("cm").disabled = false;
+        document.getElementById("cm").hidden = false;
     }else{
-        document.getElementById("cm").disabled = true;
+        document.getElementById("cm").hidden = true;
     }
 }
 //Fonction de verification des champs input d'un client moral
@@ -87,13 +96,13 @@ function typeClient() {
     let choix = client.selectedIndex;
     let type = client.options[choix].text;
     if (type === "1- Client Physique") {
-        document.getElementById("cp").disabled = false;
-        document.getElementById("cm").disabled = true;
+        document.getElementById("cp").hidden= false;
+        document.getElementById("cm").hidden = true;
     }
     else {
         if (type === "2- Client Moral") {
-            document.getElementById("cm").disabled = false;
-            document.getElementById("cp").disabled = true;
+            document.getElementById("cm").hidden = false;
+            document.getElementById("cp").hidden = true;
         }
     }
 }
