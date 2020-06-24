@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gestion des activites bancaires">
-    <meta name="author" content="mballoSoft">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Gestion des activites bancaires"/>
+    <meta name="author" content="mballoSoft"/>
     <title>Add | Client</title>
-    <link rel="stylesheet" href="../public/css/client.css">
-    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/client.css"/>
+    <link rel="stylesheet" href="../public/css/main.css"/>
 </head>
 <body>
     <header>
@@ -38,9 +38,9 @@
     <article class="content">
         <fieldset>
             <legend>Creation Client</legend>
-            <form class="form">
+            <form class="form" onsubmit="return post()">
                 <div>
-                    <select name="" id="typeclient" class="slct" onclick="typeClient()">
+                    <select name="" id="typeclient" class="slct" onchange="typeClient()">
                         <option value="0">--Choix du Type de Client--</option>
                         <option value="1">1- Client Physique</option>
                         <option value="2">2- Client Moral</option>
@@ -82,8 +82,8 @@
                             <div class="row">
                                 <label for="telephonecp">Telephone</label>
                                 <input type="text" id="telephonecp" name="telephonecp">
-                                <label for="salairecp">Salaire</label>
-                                <input type="text" id="salairecp" name="salairecp">
+                                <label for="adressecp">Adresse</label>
+                                <input type="text" id="adressecp" name="adressecp">
                             </div>
                             <div class="row">
                                 <label for="professioncp">Profession</label>
@@ -100,16 +100,16 @@
                             <div class="row">
                                 <label for="cnicp">CNI</label>
                                 <input type="text" id="cnicp" name="cnicp">
-                                <label for="adressecp">Adresse</label>
-                                <input type="text" id="adressecp" name="adressecp">
-                            </div>
-                            <div class="row">
-                                <select name="statutcp" id="statutcp" class="slct2">
+                                <select name="statutcp" id="statutcp" class="slct2" onchange="salaryForm()">
                                     <option value="0">--Statut Client--</option>
                                     <option value="1">Salarier</option>
                                     <option value="2">Non Salarier</option>
                                 </select>
-                                <select name="statutcp" id="employeur" class="slct2" onclick="employeurForm()">
+                            </div>
+                            <div class="row" id="salarier" hidden>
+                                <label for="salairecp" id="lbsalairecp">Salaire</label>
+                                <input type="text" id="salairecp" name="salairecp">
+                                <select name="statutcp" id="employeur" class="slct2" onchange="employeurForm()">
                                     <option value="0">--Employer--</option>
                                     <option value="1">Empleur1</option>
                                     <option value="2">Empleur1</option>
@@ -120,15 +120,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <button type="button" class="valider" onclick="post()">Ajouter</button>
-                    <button type="reset" class="annuler">Annuler</button>
+                    <button type="submit" class="valider" id="ajout" disabled>Ajouter</button>
+                    <button type="reset" class="annuler" id="annuler" disabled>Annuler</button>
                 </div>
             </form>
         </fieldset>
         <div id="affiche"></div>
     </article>
-    <script src="../public/js/client.js"></script>
     <script src="../public/js/main.js"></script>
+    <script src="../public/js/client.js"></script>
 </body>
 
 </html>

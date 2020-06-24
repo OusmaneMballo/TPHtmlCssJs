@@ -23,6 +23,7 @@ function verificationCompte() {
     let choix = typeCompte.selectedIndex;
     let type = typeCompte.options[choix].text;
     if (type ==="--Type Compte--") {
+        typeCompte.style("border: solid 1px red;");
         return false;
     }
 
@@ -30,14 +31,33 @@ function verificationCompte() {
     choix = client.selectedIndex;
     type = client.options[choix].text;
     if (type === "--Clients--") {
-        return false;
-    }
-
-    if (document.getElementById('frai').value === '') {
+        client.style("border: solid 1px red;");
         return false;
     }
 
     return true;
+}
+
+///
+//Attribution de frais
+///
+function frais(){
+    
+    let typeCompte = document.getElementById("typecp");
+    let choix = typeCompte.selectedIndex;
+    let type = typeCompte.options[choix].text;
+
+    if (type === "Xewel | Epargne") {
+        document.getElementById('frai').innerHTML = "450F cfa";
+    }
+    else {
+        if (type === "Courant") {
+            document.getElementById('frai').innerHTML = '600F cfa';
+        }
+        else {
+            document.getElementById('frai').innerHTML = '0F cfa';
+        }
+    }
 }
 
 ///

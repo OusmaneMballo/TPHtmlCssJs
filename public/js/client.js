@@ -62,7 +62,7 @@ function optionClient() {
 }
 
 function employeurForm(){
-    
+
     let client = document.getElementById("employeur");
     let choix = client.selectedIndex;
     let type = client.options[choix].text;
@@ -75,10 +75,10 @@ function employeurForm(){
 //Fonction de verification des champs input d'un client moral
 function verificationMoral() {
 
-    if (document.getElementById("cm").disabled == false){
+    if (document.getElementById("cm").hidden == false){
        
         if (document.getElementById('nomCM').value === '' || document.getElementById('adresseCM').value === '') {
-                return false;
+            return false;
         }
         if (document.getElementById('raisonSocialCM').value === '' || document.getElementById('emailCM').value === ''){
             return false;
@@ -91,18 +91,41 @@ function verificationMoral() {
     return true;
 }
 
+/*
+//Cette methode permet d'afficher les champs specifiques aux 
+//clients physique salaries
+*/
+function salaryForm(){
+    let client = document.getElementById("statutcp");
+    let choix = client.selectedIndex;
+    let type = client.options[choix].value;
+    if(type==='1'){
+        document.getElementById("salarier").hidden=false;
+    }
+    else{
+        document.getElementById("salarier").hidden = true;
+    }
+}
+
+/*
+//Cette methode permet de selection le formulaire a afficher
+*/
 function typeClient() {
     let client = document.getElementById("typeclient");
     let choix = client.selectedIndex;
-    let type = client.options[choix].text;
-    if (type === "1- Client Physique") {
-        document.getElementById("cp").hidden= false;
-        document.getElementById("cm").hidden = true;
+    let type = client.options[choix].value;
+    if (type === "2") {
+        document.getElementById("cp").hidden= true;
+        document.getElementById("cm").hidden = false;
+        document.getElementById("ajout").disabled=false;
+        document.getElementById("annuler").disabled = false;
     }
     else {
-        if (type === "2- Client Moral") {
-            document.getElementById("cm").hidden = false;
-            document.getElementById("cp").hidden = true;
+        if (type === "1") {
+            document.getElementById("cm").hidden = true;
+            document.getElementById("cp").hidden = false;
+            document.getElementById("ajout").disabled = false;
+            document.getElementById("annuler").disabled = false;
         }
     }
 }
@@ -110,22 +133,30 @@ function typeClient() {
 //Fonction de verification des champs input d'un client physique
 function verificationPhysique() {
 
-    if (document.getElementById("cp").disabled == false) {
+    if (document.getElementById("cp").hidden == false) {
 
         if (document.getElementById('nomcp').value === '' || document.getElementById('prenomcp').value === '') {
             return false;
         }
-        if (document.getElementById('telephonecp').value === '' || document.getElementById('salairecp').value === '') {
+        if (document.getElementById('telephonecp').value === '' || document.getElementById('passwdcp').value === '') {
+            
             return false;
         }
         if (document.getElementById('emailcp').value === '' || document.getElementById('logincp').value === '') {
-            return false;
-        }
-        if (document.getElementById('passwdcp').value === '') {
+            
             return false;
         }
         if (document.getElementById('cnicp').value === '' || document.getElementById('adressecp').value === '') {
+            
             return false;
+        }
+        if (document.getElementById("salarier").hidden === false){
+            let client = document.getElementById("employeur");
+            let choix = client.selectedIndex;
+            let statut = client.options[choix].value;
+            if (statut <= 0 || document.getElementById('salairecp').value === '') {
+                return false;
+            }
         }
         let client = document.getElementById("statutcp");
         let choix = client.selectedIndex;
@@ -157,3 +188,18 @@ function post(){
         return false;
     }
 }
+
+/*
+    typeClient.addEventListener('change', function(e) {
+    alert(typeClient.value);
+    infoNouveauClientMoral.style.display = 'none';
+    if (typeClient.value == '1') {
+
+        infoClientPhysique.style.display = 'block';
+        infoAncienClient.style.display = 'none';
+        infoNouveauClientPhysique.style.display = 'block'
+        clientMoral.style.display = 'none';
+        infoClientPhysiqueSalarie.style.display = 'none';
+        infoAncienClientMoral.style.display = 'none';
+        viderCli
+*/
