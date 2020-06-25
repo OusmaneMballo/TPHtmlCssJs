@@ -1,39 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Gestion des activites bancaires"/>
-    <meta name="author" content="mballoSoft"/>
-    <title>Add | Compte</title>
-    <link rel="stylesheet" href="./public/css/compte"/>
-    <link rel="stylesheet" href="./public/css/main.css"/>
-</head>
-<body>
-    <header>
-        <nav>
-            <h1>Banque Du <span style="color: aliceblue;">Peuple</span></h1>
-        </nav>
-    </header>
-    <aside class="sidebarre">
-        <div class="flex">
-            <img src="./public/img/profil.jpg" class="profil" alt="Banque du Peuple" srcset=""/>
-            <p class="mail">xywzt@gmail.com</p>
-            <div class="contener" style="background-color: rgb(85, 163, 231); color: white;">
-                <a href="./">Dashboard</a>
-            </div>
-            <div class="contener">
-                <a href="compte">Compte</a>
-            </div>
-            <div class="contener">
-                <a href="client">Client</a>
-            </div>
-            <div class="contener">
-                Logout
-            </div>
-        </div>
-    </aside>
-    <!--Fin Menu-->
+<?php
+include '../layout/header.php';
+?>
+
+<!--=========Debut sideBarre============-->
+<?php
+
+include '../layout/sidebarre.php';
+
+?>
+<!--=========Debut sideBarre============-->
+
+<!--========Contenu du body===========-->
     <!--Contenu du body-->
     <article class="content">
         <fieldset>
