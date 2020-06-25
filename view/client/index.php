@@ -6,8 +6,8 @@
     <meta name="description" content="Gestion des activites bancaires"/>
     <meta name="author" content="mballoSoft"/>
     <title>Add | Client</title>
-    <link rel="stylesheet" href="../public/css/client.css"/>
-    <link rel="stylesheet" href="../public/css/main.css"/>
+    <link rel="stylesheet" href="./public/css/client.css"/>
+    <link rel="stylesheet" href="./public/css/main.css"/>
 </head>
 <body>
     <header>
@@ -17,16 +17,16 @@
     </header>
     <aside class="sidebarre">
         <div class="flex">
-            <img src="../img/profil.jpg" class="profil" alt="Banque du Peuple" srcset="">
+            <img src="./public/img/profil.jpg" class="profil" alt="Banque du Peuple" srcset="">
             <p class="mail">xywzt@gmail.com</p>
             <div class="contener" style="background-color: rgb(85, 163, 231); color: white;">
-                <a href="../index.html">Dashboard</a>
+                <a href="./">Dashboard</a>
             </div>
             <div class="contener">
-                <a href="../compte/index.html">Compte</a>
+                <a href="compte">Compte</a>
             </div>
             <div class="contener">
-                <a href="index.html">Client</a>
+                <a href="client">Client</a>
             </div>
             <div class="contener">
                 Logout
@@ -127,8 +127,8 @@
         </fieldset>
         <div id="affiche"></div>
     </article>
-    <script src="../public/js/main.js"></script>
-    <script src="../public/js/client.js"></script>
+    <script src="./public/js/main.js"></script>
+    <script src="./public/js/client.js"></script>
 </body>
 
 </html>

@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gestion des activites bancaires">
-    <meta name="author" content="mballoSoft">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Gestion des activites bancaires"/>
+    <meta name="author" content="mballoSoft"/>
     <title>Add | Client</title>
-    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/main.css"/>
 </head>
 <body>
     <header>
@@ -22,10 +22,10 @@
                 Dashboard
             </div>
             <div class="contener">
-                <a href="./compte/index.html">Compte</a>
+                <a href="compte">Compte</a>
             </div>
             <div class="contener">
-                <a href="./client/index.html">Client</a>
+                <a href="client">Client</a>
             </div>
             <div class="contener">
                 Logout

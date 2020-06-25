@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^.$ index.php
+RewriteRule ^compte$ ./view/compte/index.php
+RewriteRule ^client$ ./view/client/index.php
