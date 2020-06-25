@@ -1,5 +1,7 @@
 <?php
+
 include '../layout/header.php';
+
 ?>
 
 <!--=========Debut sideBarre============-->
@@ -28,21 +30,21 @@ include '../layout/sidebarre.php';
                             <legend>Client Moral</legend>
                             <div class="row">
                                 <label for="nomCM">Nom</label>
-                                <input type="text" id="nomCM" name="nomCM">
+                                <input type="text" class="inputcl" id="nomCM" name="nomCM"/>
                                 <label for="adresseCM">Adresse</label>
-                                <input type="text" id="adresseCM" name="adresseCM">
+                                <input type="text" class="inputcl" id="adresseCM" name="adresseCM"/>
                             </div>
                             <div class="row">
                                 <label for="raisonSocialCM">Raison Social</label>
-                                <input type="text" id="raisonSocialCM" name="raisonSocialCM">
+                                <input type="text" class="inputcl" id="raisonSocialCM" name="raisonSocialCM"/>
                                 <label for="emailCM">Email</label>
-                                <input type="email" id="emailCM" name="emailCM">
+                                <input type="email" class="inputcl" id="emailCM" name="emailCM"/>
                             </div>
                             <div class="row">
                                 <label for="loginCM">Login</label>
-                                <input type="text" id="loginCM" name="loginCM">
+                                <input type="text" class="inputcl" id="loginCM" name="loginCM"/>
                                 <label for="passwdCM">PassWord</label>
-                                <input type="password" id="passwdCM" name="passwdCM">
+                                <input type="password" class="inputcl" id="passwdCM" name="passwdCM"/>
                             </div>
                         </fieldset>
                     </div>
@@ -51,31 +53,31 @@ include '../layout/sidebarre.php';
                             <legend>Client Physique</legend>
                             <div class="row">
                                 <label for="nomcp">Nom</label>
-                                <input type="text" id="nomcp" name="nomcp">
+                                <input type="text" class="inputcl" id="nomcp" name="nomcp"/>
                                 <label for="prenomcp">Prenom</label>
-                                <input type="text" id="prenomcp" name="prenomcp">
+                                <input type="text" class="inputcl" id="prenomcp" name="prenomcp"/>
                             </div>
                             <div class="row">
                                 <label for="telephonecp">Telephone</label>
-                                <input type="text" id="telephonecp" name="telephonecp">
+                                <input type="text" class="inputcl" id="telephonecp" name="telephonecp"/>
                                 <label for="adressecp">Adresse</label>
-                                <input type="text" id="adressecp" name="adressecp">
+                                <input type="text" class="inputcl" id="adressecp" name="adressecp"/>
                             </div>
                             <div class="row">
                                 <label for="professioncp">Profession</label>
-                                <input type="text" id="professioncp" name="professioncp">
+                                <input type="text" class="inputcl" id="professioncp" name="professioncp"/>
                                 <label for="emailcp">Email</label>
-                                <input type="email" id="emailcp" name="emailcp">
+                                <input type="email" class="inputcl" id="emailcp" name="emailcp"/>
                             </div>
                             <div class="row">
                                 <label for="logincp">Login</label>
-                                <input type="text" id="logincp" name="logincp">
+                                <input type="text" class="inputcl" id="logincp" name="logincp"/>
                                 <label for="passwdcp">PassWord</label>
-                                <input type="password" id="passwdcp" name="passwdcp">
+                                <input type="password" class="inputcl" id="passwdcp" name="passwdcp"/>
                             </div>
                             <div class="row">
                                 <label for="cnicp">CNI</label>
-                                <input type="text" id="cnicp" name="cnicp">
+                                <input type="text" class="inputcl" id="cnicp" name="cnicp"/>
                                 <select name="statutcp" id="statutcp" class="slct2" onchange="salaryForm()">
                                     <option value="0">--Statut Client--</option>
                                     <option value="1">Salarier</option>
@@ -84,7 +86,7 @@ include '../layout/sidebarre.php';
                             </div>
                             <div class="row" id="salarier" hidden>
                                 <label for="salairecp" id="lbsalairecp">Salaire</label>
-                                <input type="text" id="salairecp" name="salairecp">
+                                <input type="text" class="inputcl" id="salairecp" name="salairecp"/>
                                 <select name="statutcp" id="employeur" class="slct2" onchange="employeurForm()">
                                     <option value="0">--Employer--</option>
                                     <option value="1">Empleur1</option>

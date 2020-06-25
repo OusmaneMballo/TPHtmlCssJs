@@ -7,8 +7,8 @@
     <meta name="author" content="mballoSoft"/>
     <title>Add | Client</title>
     <link rel="stylesheet" href="./public/css/main.css"/>
-    <link rel="stylesheet" href="./public/css/client.css"/>
     <link rel="stylesheet" href="./public/css/compte.css"/>
+    <link rel="stylesheet" href="./public/css/client.css"/>
 </head>
 <body>
 <header>

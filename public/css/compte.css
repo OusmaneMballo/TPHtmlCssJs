@@ -7,7 +7,7 @@ fieldset legend{
 }
 
 input{
-    width: 555px;
+    width: 1%;
     height: 30px;
     margin-top: 30px;
     font-family: 'Courier New', Courier, monospace;
@@ -30,11 +30,11 @@ label{
     color: rgb(58, 80, 102);
 }
 
-select{
+.selectcmpt{
     border: solid 1px rgb(85, 163, 231);
     border-radius: 5px;
     color: rgb(85, 163, 231);
-    height: 30px;
+    height: 1%;
     width: 300px;
     margin-top: 10px;
 }

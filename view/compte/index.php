@@ -17,7 +17,7 @@ include '../layout/sidebarre.php';
             <legend>Creation Compte</legend>
             <form action="" class="form">
                     <div class="row">
-                        <select name="typecp" id="typecp" onchange="frais()">
+                        <select name="typecp" class="selectcmpt" id="typecp" onchange="frais()">
                             <option value="0">--Type Compte--</option>
                             <option value="1">Xewel | Epargne</option>
                             <option value="2">Courant</option>
