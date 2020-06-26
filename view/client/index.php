@@ -16,7 +16,7 @@ include '../layout/sidebarre.php';
     <article class="content">
         <fieldset>
             <legend>Creation Client</legend>
-            <form class="form" onsubmit="return post()">
+            <form class="form" onsubmit="return post()" method="post" action="add_cm">
                 <div>
                     <select name="" id="typeclient" class="slct" onchange="typeClient()">
                         <option value="0">--Choix du Type de Client--</option>

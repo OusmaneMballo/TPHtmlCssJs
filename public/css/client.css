@@ -11,12 +11,12 @@ fieldset legend{
 .formulaire fieldset{
     width: 95%;
     height: auto;
-    margin-right:60px;
+    margin-right:10px;
 }
 
 .inputcl{
-    width: 1%;
-    height: 35px;
+    width: 35%;
+    height: 30px;
     margin-top: 30px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;

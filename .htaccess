@@ -2,3 +2,4 @@ RewriteEngine On
 RewriteRule ^.$ index.php
 RewriteRule ^compte$ ./view/compte/index.php
 RewriteRule ^client$ ./view/client/index.php
+RewriteRule ^add_cm$ ./src/controller/ClientMoralController.php
