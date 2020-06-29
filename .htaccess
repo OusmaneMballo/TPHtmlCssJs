@@ -3,3 +3,5 @@ RewriteRule ^.$ index.php
 RewriteRule ^compte$ ./view/compte/index.php
 RewriteRule ^client$ ./view/client/index.php
 RewriteRule ^add_cm$ ./src/controller/ClientMoralController.php
+RewriteRule ^add_cp$ ./src/controller/ClientPhysiqueController.php
+RewriteRule ^add_client$ ./src/controller/ClientController.php

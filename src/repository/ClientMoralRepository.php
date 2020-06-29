@@ -3,7 +3,7 @@
 
 namespace src\repository;
 
-include 'DbAccess.php';
+//include 'DbAccess.php';
 
 use entity\ClientMoral;
 

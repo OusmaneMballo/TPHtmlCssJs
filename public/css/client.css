@@ -15,14 +15,14 @@ fieldset legend{
 }
 
 .inputcl{
-    width: 35%;
+    width: 30%;
     height: 30px;
     margin-top: 30px;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     color: rgb(58, 80, 102);
     border: solid 1px rgb(85, 163, 231);
-    border-radius: 20px;
+    border-radius: 15px;
 }
 .inputcl:hover{
     background-color: rgb(210, 216, 223);

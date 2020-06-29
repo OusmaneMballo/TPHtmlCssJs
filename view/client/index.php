@@ -1,14 +1,10 @@
 <?php
-
 include '../layout/header.php';
-
 ?>
 
 <!--=========Debut sideBarre============-->
 <?php
-
 include '../layout/sidebarre.php';
-
 ?>
 <!--=========Debut sideBarre============-->
 
@@ -16,9 +12,9 @@ include '../layout/sidebarre.php';
     <article class="content">
         <fieldset>
             <legend>Creation Client</legend>
-            <form class="form" onsubmit="return post()" method="post" action="add_cm">
+            <form class="form" onsubmit="return post()" method="post" action="add_client">
                 <div>
-                    <select name="" id="typeclient" class="slct" onchange="typeClient()">
+                    <select name="typeclient" id="typeclient" class="slct selectclt" onchange="typeClient()">
                         <option value="0">--Choix du Type de Client--</option>
                         <option value="1">1- Client Physique</option>
                         <option value="2">2- Client Moral</option>
@@ -39,6 +35,12 @@ include '../layout/sidebarre.php';
                                 <input type="text" class="inputcl" id="raisonSocialCM" name="raisonSocialCM"/>
                                 <label for="emailCM">Email</label>
                                 <input type="email" class="inputcl" id="emailCM" name="emailCM"/>
+                            </div>
+                            <div class="row">
+                                <label for="identifiantCM">Identifiant</label>
+                                <input type="text" class="inputcl" id="identifiantCM" name="identifiantCM"/>
+                                <label for="telephoneCM">Telephone</label>
+                                <input type="text" class="inputcl" id="telephoneCM" name="telephoneCM"/>
                             </div>
                             <div class="row">
                                 <label for="loginCM">Login</label>
@@ -78,16 +80,32 @@ include '../layout/sidebarre.php';
                             <div class="row">
                                 <label for="cnicp">CNI</label>
                                 <input type="text" class="inputcl" id="cnicp" name="cnicp"/>
-                                <select name="statutcp" id="statutcp" class="slct2" onchange="salaryForm()">
+                                <select name="statutcp" id="statutcp" class="slct2 selectclt" onchange="salaryForm()">
                                     <option value="0">--Statut Client--</option>
-                                    <option value="1">Salarier</option>
-                                    <option value="2">Non Salarier</option>
+                                    <option value="1">Salarier </option>
+                                    <option value="2">Non Salarier </option>
+                               <!-- <php
+                                   include '../../src/controller/TypeClientController.php';
+                                    /*echo "<option value=\"1\">Salarierecho </option>";
+                                    echo "<option value=\"2\">Non Salarierecho </option>";
+                                $lisTypeClient=listTypeClient();
+                                if($lisTypeClient!=null)
+                                {
+                                    while ($resultat=$lisTypeClient->fetch(PDO::FETCH_ASSOC))
+                                    {
+                                        $id=$resultat['id'];
+                                        $libelle=$resultat['libelle'];
+                                        echo "<option value=\"$id\">$libelle</option>";
+                                    }
+                                }
+
+                                */?>-->
                                 </select>
                             </div>
                             <div class="row" id="salarier" hidden>
                                 <label for="salairecp" id="lbsalairecp">Salaire</label>
                                 <input type="text" class="inputcl" id="salairecp" name="salairecp"/>
-                                <select name="statutcp" id="employeur" class="slct2" onchange="employeurForm()">
+                                <select name="employeur" id="employeur" class="slct2 selectclt" onchange="employeurForm()">
                                     <option value="0">--Employer--</option>
                                     <option value="1">Empleur1</option>
                                     <option value="2">Empleur1</option>
